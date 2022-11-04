@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Movie Finder Results</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+
+    <section class="hero is-primary">
+        <div class="hero-body">
+          <p class="title">
+            Movie Finder Results
+          </p>
+          <p class="subtitle">
+            Find below your search results
+          </p>
+          <button id="backbtn" class="button">Back</button>
+        </div>
+      </section>
+
+      <div class="tile is-ancestor">
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Photo</p>
+            <p class="subtitle">Image of movie</p>
+          </article>
+        </div>
+        <div class="tile is-8 is-vertical">
+            <div class="tile">
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title">Title</p>
+                  <p class="subtitle">Movie Title</p>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title">Genre</p>
+                  <p class="subtitle">Movie Genre</p>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title">Year</p>
+                  <p class="subtitle">Movie Year</p>
+                </article>
+              </div>
+              <div class="tile is-parent">
+                <article class="tile is-child box">
+                  <p class="title">Rating</p>
+                  <p class="subtitle">Movie Score</p>
+                </article>
+              </div>
+            </div>
+            <div class="tile is-parent">
+              <article class="tile is-child box">
+                <p class="title">Description/Plot</p>
+                <p class="subtitle">Description and/or plot of the movie</p>
+              </article>
+            </div>
+          </div>
+        <div class="tile is-parent">
+          <article class="tile is-child box">
+            <p class="title">Options</p>
+            <p class="subtitle"></p>
+            <div class="content">
+                <button class="button is-primary mb-2 is-fullwidth">More Details</button>
+                <button class="button is-primary mb-2 is-fullwidth">Where to Watch</button>
+                <button class="button is-primary mb-2 is-fullwidth">Add to Watchlist</button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+
+      <footer class="footer">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+
+  </body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+
 </html>
