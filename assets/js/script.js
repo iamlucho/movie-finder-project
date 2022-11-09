@@ -39,4 +39,3 @@ fetch(requestUrl)
   }
 });
   });
-
