@@ -78,4 +78,3 @@ $('#year').on('change', function(){
     $('#moviegenre').prop( "disabled", true );
   }
 });
-
