@@ -10,19 +10,58 @@ fetch(randomURL)
     $( "#randomMovie" ).append("<p class='subtitle is-flex is-justify-content-center'>"+ data.data[randomNumber].overview + "</p>");
   });
 
-
+  
   $("#takemebtn").on("click", function () {
 
   });
 
+//Back button
+$("#priorbtn").on("click", function () {
 
-
+  var searchedMovies = JSON.parse(localStorage.getItem("movies"));
+  for (let i = 0; i < searchedMovies.length; i++) {
+    var watchList = document.createElement('li');
+    watchList.innerHTML = searchedMovies[i];
+    $('#hist-content').append(watchList);
+  }
+});
 
 $("#searchbtn").on("click", function () {
 
   var searchTitle = document.getElementById("movietitle");
   var searchGenre = document.getElementById("moviegenre");
   var searchYear = document.getElementById("year");
+
+  var titleInput = $("#movietitle").val();
+  saveSearch(titleInput);
+
+//Key & url for database API
+  const APIkey = "0bd962e73cf85056fcdda0597b83fb2b"
+  var searchURL = "https://api.themoviedb.org/3/search/movie?api_key=" + APIkey + "&language=en-US&query=" + titleInput + "&page=1&include_adult=false"
+
+  fetch(searchURL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data); })
+    
+//localStorage function
+  function saveSearch(data) {
+    var a = [];
+    // Parse the serialized data back into an array of objects
+    a = JSON.parse(localStorage.getItem('movies')) || [];
+    if(a.indexOf(data) == -1){
+    // Pushes the new data onto the first position in array
+      a.unshift(data);
+      //Limits list length to 8
+      if(a.length>8) {
+        a.pop();
+      }
+    // Alert the array value
+      console.log(a);
+    // Re-serialize the array back into a string and store it in localStorage
+      localStorage.setItem('movies', JSON.stringify(a));
+  } 
+}
 
   if (searchTitle && searchTitle.value) {
     alert("Title");

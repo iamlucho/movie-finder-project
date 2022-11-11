@@ -103,7 +103,7 @@
         <div class="field">
           <div class="control is-flex is-justify-content-right">
             <button id="watchlistbtn" class="button is-primary mb-2 mr-2 js-modal-trigger" data-target="watchlist-modal">Watchlist</button>
-            <button id="priorbtn" class="button is-primary mb-2 mr-2 js-modal-trigger" data-target="history-modal">Prior History</button>
+            <button id="priorbtn" class="button is-primary mb-2 mr-2 js-modal-trigger" data-target="history-modal">Search History</button>
             <button id="choosebtn"class="button is-primary mb-2 mr-2">Choose for me</button>
             <button id="searchbtn"class="button is-primary mb-2 mr-2">Search</button>
           </div>
@@ -133,10 +133,10 @@
       
         <div class="modal-card">
           <header class="modal-card-head">
-            <p class="modal-card-title">Watch History</p>
+            <p class="modal-card-title">Previous Searches</p>
             <button class="delete" aria-label="close"></button>
           </header>
-          <section class="modal-card-body">
+          <section id="hist-content" class="modal-card-body">
             <!-- Content ... -->
           </section>
           <footer class="modal-card-foot">
