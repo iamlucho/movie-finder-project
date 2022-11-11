@@ -3,7 +3,7 @@ var today = moment();
 $("#date").text(today.format("MMM Do, YYYY"));
 
 
-//Modal clecks
+//Modal clicks
 
 document.addEventListener('DOMContentLoaded', () => {
     // Functions to open and close a modal
@@ -49,6 +49,3 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-
-
-
