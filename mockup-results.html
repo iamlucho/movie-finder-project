@@ -17,7 +17,7 @@
           <p class="subtitle">
             Find below your search results
           </p>
-          <button id="backbtn" class="button" onclick="history.back()">Back to Search</button>
+          <button id="backbtn" class="button" onclick="history.back()">Back</button>
         </div>
       </section>
 
@@ -69,8 +69,12 @@
             <p class="title" style="text-align:center">Options</p>
             <p class="subtitle"></p>
             <div class="content">
-                <button class="button is-primary mb-2 is-fullwidth">More Details</button>
-                <button class="button is-primary mb-2 is-fullwidth">Where to Watch</button>
+                <!-- Added button for More Details-->
+                <a href="https://www.themoviedb.org"> <button value="https://www.themoviedb.org" class="button is-primary mb-2 is-fullwidth" id="moreDirectToLink">More Details</button></a>
+
+                <!-- Added button for Where to Watch-->
+                <a href="https://reelgood.com/search"><button value="https://reelgood.com/search" class="button is-primary mb-2 is-fullwidth" id="whereDirectToLink">Where to Watch</button></a>
+
                 <button class="button is-primary mb-2 is-fullwidth">Add to Watchlist</button>
             </div>
           </article>
@@ -85,8 +89,7 @@
             <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
             is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0 </a>.
             <br>
-            Content/description cited by: TMDB, https://www.themoviedb.org/movie/218-the-terminator
-           
+            Content/description cited by: TMDB, <a href="https://www.themoviedb.org/movie/218-the-terminator"></a>
           </p>
         </div>
       </footer>

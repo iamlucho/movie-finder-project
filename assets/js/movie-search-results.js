@@ -1,8 +1,3 @@
-//Added current date of day
-var today = moment();
-$("#date").text(today.format("MMM Do, YYYY"));
-
-
 //Modal clicks
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -51,6 +46,17 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
+/*Added local storage to retireve data from API 
+when user clicks title search button that shows 
+movie tile, release date, vote average score, and description*/
+var data=JSON.parse(localStorage.getItem("movie"));
+console.log(data);
+document.querySelector("#movie-title").textContent=data.title;
+document.querySelector("#movie-year").textContent=data.release_date;
+document.querySelector("#movie-rating").textContent=data.vote_average;
+document.querySelector("#movie-description").textContent=data.overview;
+
+
 //Added a link to the "More Details" button
 var moreDirectButton = document.getElementById('moreDirectToLink');
 
@@ -62,7 +68,7 @@ function moreDirectLink(event) {
 moreDirectButton.addEventListener('click', moreDirectLink);
 
 
-//Added a link to the "Where to Watch Streaming Movie" button
+//Added a link to the "Where to Watch Stream Movie" button
 var whereDirectButton = document.getElementById('whereDirectToLink');
 
 function whereDirectLink(event) {
@@ -70,7 +76,3 @@ function whereDirectLink(event) {
     location.href=event.target.value;
 }
 whereDirectButton.addEventListener('click', whereDirectLink);
-
-
-
-
