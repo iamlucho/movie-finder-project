@@ -51,7 +51,7 @@ when user clicks title search button that shows
 movie tile, release date, vote average score, and description*/
 var data=JSON.parse(localStorage.getItem("movie"));
 console.log(data);
-document.querySelector("#movie-poster").textContent=data.poster_path;
+// document.querySelector("#movie-poster").textContent=data.poster_path;
 document.querySelector("#movie-title").textContent=data.title;
 document.querySelector("#movie-year").textContent=data.release_date;
 document.querySelector("#movie-rating").textContent=data.vote_average;
@@ -66,7 +66,7 @@ function moreDirectLink(event) {
     // window.open(link.value);
     location.href=event.target.value;
 }
-moreDirectButton.addEventListener('click', moreDirectLink);
+// moreDirectButton.addEventListener('click', moreDirectLink);
 
 
 //Added a link to the "Where to Watch Stream Movie" button
