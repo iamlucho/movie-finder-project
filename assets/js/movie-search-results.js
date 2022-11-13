@@ -52,6 +52,10 @@ movie tile, release date, vote average score, and description*/
 
 var data=JSON.parse(localStorage.getItem("movie"));
 console.log(data);
+const poster = document.querySelector("#movie-poster")
+const posterpath = data.poster_path
+poster.src = "https://image.tmdb.org/t/p/w500" + posterpath;
+
 document.querySelector("#movie-poster").textContent=data.poster_path;
 document.querySelector("#movie-title").textContent=data.title;
 document.querySelector("#movie-year").textContent=data.release_date;
