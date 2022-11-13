@@ -49,6 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 /*Added local storage to retireve data from API 
 when user clicks title search button that shows 
 movie tile, release date, vote average score, and description*/
+
 var data=JSON.parse(localStorage.getItem("movie"));
 console.log(data);
 document.querySelector("#movie-title").textContent=data.title;
