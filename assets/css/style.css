@@ -1,3 +1,77 @@
-* {
-    box-sizing: border-box;
+*{
+  box-sizing: border-box;
   }
+
+.title {
+  text-align: center;
+  font-size: 25px;
+}
+
+#randomName {
+  font-size: 15px;
+  background-color: rgb(136, 0, 255);
+}
+
+.topInfo{
+  text-align: center;
+}
+
+#date {
+  font-size: 17px;
+}
+
+.subtitle {
+  font-size: 15px;
+}
+
+.hero-body {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+.hero.is-primary {
+  background-image: url("https://www.webstaurantstore.com/uploads/seo_category/2021/8/popcorn-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero.is-link {
+  background-color: black;
+  font-size: 50px;
+}
+
+body {
+  background-color: rgb(136, 0, 255);
+}
+
+.label {
+  color: rgb(0, 0, 0);
+}
+
+#watchlistbtn {
+  background-color: black;
+}
+
+#priorbtn {
+  background-color: black;
+}
+
+#choosebtn {
+  background-color: black;
+}
+
+#searchbtn {
+  background-color: black;
+}
+
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  margin: 0px;
+}
+
+#takemebtn {
+background-color: rgb(136, 0, 255);
+color: rgb(255, 255, 255);
+left: 40%;
+}

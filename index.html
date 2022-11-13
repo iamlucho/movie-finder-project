@@ -23,16 +23,16 @@
   </head>
   <body>
      <!-- Main Hero for website into-->
-     <section class="hero is-primary ">
+     <section class="hero is-primary">
       <div class="hero-body">
-        <p class="title is-flex is-justify-content-center">
+        <p class="title">
           Movie Finder
         </p>
          <!-- Added current date of day-->
         <p id="date" class="subtitle is-flex is-justify-content-center">
         </p>
           <p class="subtitle is-flex is-justify-content-center">
-            Get your popcorn ready!
+            Getcha popcorn ready!
           </p>
         </div>
     </section>
@@ -57,7 +57,7 @@
        </div>
 
         <div class="field">
-          <label class="label">Movie Genre</label>
+          <label class="label">Movie Genre:</label>
           <div class="control">
              <div class="select">
                <select id="moviegenre">
@@ -70,7 +70,6 @@
                   <option>Drama</option>
                   <option>Horror</option>
                   <option>Romance</option>  
-                  <option>Science Fiction</option>
                   <option>Western</option>  
                </select>
              </div>
@@ -78,7 +77,7 @@
        </div>
    
        <div class="field">
-        <label class="label">Movie Year</label>
+        <label class="label">Movie Year:</label>
         <div class="control">
            <div class="select">
              <select id="year">
@@ -96,48 +95,11 @@
             
         <div class="field">
           <div class="control is-flex is-justify-content-right">
-            <button id="watchlistbtn" class="button is-primary mb-2 mr-2 js-modal-trigger" data-target="watchlist-modal">Watchlist</button>
-            <button id="priorbtn" class="button is-primary mb-2 mr-2 js-modal-trigger" data-target="history-modal">Search History</button>
-            <button id="choosebtn"class="button is-primary mb-2 mr-2">Choose for me</button>
-            <button id="searchbtn"class="button is-primary mb-2 mr-2">Search</button>
+             <button id="watchlistbtn" class="button is-primary mb-2 mr-2">Watchlist</button>
+             <button id="priorbtn" class="button is-primary mb-2 mr-2">Prior History</button>
+             <button id="choosebtn"class="button is-primary mb-2 mr-2">Choose for me</button>
+             <button id="searchbtn"class="button is-primary mb-2 mr-2">Search</button>
           </div>
-        </div>
-
-        <!--Watchlist Modal Start-->
-        <div id="watchlist-modal" class="modal">
-          <div class="modal-background"></div>
-        
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Watchlist</p>
-              <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-              <!-- Content ... -->
-            </section>
-            <footer class="modal-card-foot">
-        
-          <button class="modal-close is-large" aria-label="close"></button>
-          </div>
-        </div>
-  
-        <!--History Modal Start-->
-        <div id="history-modal" class="modal">
-          <div class="modal-background"></div>
-        
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Previous Searches</p>
-              <button class="delete" aria-label="close"></button>
-            </header>
-            <section id="hist-content" class="modal-card-body">
-              <!-- Content ... -->
-            </section>
-            <footer class="modal-card-foot">
-        
-          <button class="modal-close is-large" aria-label="close"></button>
-          </div>
-        </div>
 
        <section>
         <div class="flex-column" id="movieUser"></div>
@@ -146,9 +108,7 @@
      <footer class="footer">
       <div class="content has-text-centered">
         <p>
-          <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-          <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-          is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        This project was completed by Jarrett, Lissette, Christopher and Luciano for the UM Coding Bootcamp.  
         </p>
       </div>
     </footer>
