@@ -51,25 +51,25 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 
-//Added a link to the "More Details" button
-var moreDirectButton = document.getElementById('moreDirectToLink');
+// //Added a link to the "More Details" button
+// var moreDirectButton = document.getElementById('moreDirectToLink');
 
-function moreDirectLink(event) {
-    console.log(event.target.value);
-    // window.open(link.value);
-    location.href=event.target.value;
-}
-moreDirectButton.addEventListener('click', moreDirectLink);
+// function moreDirectLink(event) {
+//     console.log(event.target.value);
+//     // window.open(link.value);
+//     location.href=event.target.value;
+// }
+// moreDirectButton.addEventListener('click', moreDirectLink);
 
 
-//Added a link to the "Where to Watch Streaming Movie" button
-var whereDirectButton = document.getElementById('whereDirectToLink');
+// //Added a link to the "Where to Watch Streaming Movie" button
+// var whereDirectButton = document.getElementById('whereDirectToLink');
 
-function whereDirectLink(event) {
-    console.log(event.target.value);
-    location.href=event.target.value;
-}
-whereDirectButton.addEventListener('click', whereDirectLink);
+// function whereDirectLink(event) {
+//     console.log(event.target.value);
+//     location.href=event.target.value;
+// }
+// whereDirectButton.addEventListener('click', whereDirectLink);
 
 
 

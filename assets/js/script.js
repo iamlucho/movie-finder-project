@@ -4,7 +4,8 @@ var randomNumber = Math.floor(Math.random() * 100);
 fetch(randomURL)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data.data[randomNumber]);
+    // console.log(data.data[randomNumber]);
+    localStorage.setItem("randomMovie", JSON.stringify(data.data[randomNumber].name));
     $( "#randomMovie" ).append("<p id='randomName' class='is-flex is-justify-content-center'>Why not watch: </p>");
     $( "#randomMovie" ).append("<p id='randomName' class='title is-flex is-justify-content-center'>"+ data.data[randomNumber].name  + "</p>");
     $( "#randomMovie" ).append("<p class='subtitle is-flex is-justify-content-center'>"+ data.data[randomNumber].overview + "</p>");
@@ -12,11 +13,24 @@ fetch(randomURL)
 
   //Random Quote Take Me There Button
   $("#takemebtn").on("click", function () {
-
-  });
+    var randomTitle = localStorage.getItem("randomMovie");
+    const APIkey = "0bd962e73cf85056fcdda0597b83fb2b"
+    console.log(randomTitle);
+    var url = "search-results.html?name=" + encodeURIComponent(randomTitle);
+    window.location.href = url;
+    var randomSearchURL = "https://api.themoviedb.org/3/search/movie?api_key=" + APIkey + "&language=en-US&query=" + randomTitle + "&page=1&include_adult=false"
+    
+    //Added local storage for storing data from the API after user searches title
+      fetch(randomSearchURL)
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data.results[0])
+          localStorage.setItem("movie", JSON.stringify(data.results[0]))
+  })
+})
 
 //Back button
-$("#priorbtn").on("click", function () {
+$("#priorbtn").one("click", function () {
 
   var searchedMovies = JSON.parse(localStorage.getItem("movies"));
   for (let i = 0; i < searchedMovies.length; i++) {
@@ -34,6 +48,7 @@ $("#searchbtn").on("click", function () {
 
   var titleInput = $("#movietitle").val();
   saveSearch(titleInput);
+
 
 //Key & url for database API
   const APIkey = "0bd962e73cf85056fcdda0597b83fb2b"
@@ -91,7 +106,6 @@ $("#date").text(today.format("MMM Do, YYYY"));
       localStorage.setItem('movies', JSON.stringify(a));
   } 
 }
-
 
 $('#movietitle').on('change', function() {
   if(this.value.length > 0){
