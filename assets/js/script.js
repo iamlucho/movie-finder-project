@@ -10,7 +10,7 @@ fetch(randomURL)
     $( "#randomMovie" ).append("<p class='subtitle is-flex is-justify-content-center'>"+ data.data[randomNumber].overview + "</p>");
   });
 
-  
+  //Random Quote Take Me There Button
   $("#takemebtn").on("click", function () {
 
   });

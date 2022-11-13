@@ -1,13 +1,16 @@
 # movie-finder-project
-A team effort for a movie finder application using HTML, JS, and third-party APIs.
+A team effort for a movie finder application using HTML, CSS, JS, and third-party APIs.
 
 # Name
 Movie Finder
 
 ## Author 
-Luciano Aguirre
-Christopher Cristóbal
-Jarrett Jennings
+Luciano Aguirre;
+
+Christopher Cristóbal;
+
+Jarrett Jennings;
+
 Lisette Morales
 
 ## Deployment URL
