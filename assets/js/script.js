@@ -16,8 +16,6 @@ fetch(randomURL)
     var randomTitle = localStorage.getItem("randomMovie");
     const APIkey = "0bd962e73cf85056fcdda0597b83fb2b"
     console.log(randomTitle);
-    var url = "search-results.html?name=" + encodeURIComponent(randomTitle);
-    window.location.href = url;
     var randomSearchURL = "https://api.themoviedb.org/3/search/movie?api_key=" + APIkey + "&language=en-US&query=" + randomTitle + "&page=1&include_adult=false"
     
     //Added local storage for storing data from the API after user searches title
@@ -25,7 +23,9 @@ fetch(randomURL)
         .then((response) => response.json())
         .then((data) => {
           console.log(data.results[0])
-          localStorage.setItem("movie", JSON.stringify(data.results[0]))
+          localStorage.setItem("movie", JSON.stringify(data.results[0]))      
+          var url = "search-results.html?name=" + encodeURIComponent(randomTitle);
+          window.location.href = url;
   })
 })
 
