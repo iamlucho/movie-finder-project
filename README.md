@@ -35,7 +35,7 @@ I WANT to find a list of all available movies matching my interests
 SO THAT I can plan my movie night accordingly
 
 ## Screenshot
-![Movie-Finder](https://user-images.githubusercontent.com/113862182/201781155-1e1dd1ad-3d5f-477b-b961-604189de2eed.png)
+![Movie-Finder](https://user-images.githubusercontent.com/113862182/201790513-9dce373e-b3b3-4945-a984-f8a3b9eb3af7.png)
 
 ## Acceptance Criteria
 GIVEN a simple dashboard with a random movie quote and a search box with different input forms
