@@ -1,3 +1,4 @@
+<img width="468" alt="Movie-Finder" src="https://user-images.githubusercontent.com/113862182/201781155-1e1dd1ad-3d5f-477b-b961-604189de2eed.png">
 # movie-finder-project
 A team effort for a movie finder application using HTML, CSS, JS, and third-party APIs.
 
