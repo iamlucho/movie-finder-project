@@ -99,3 +99,7 @@ left: 40%;
   background-size: cover;
   color: white;
 }
+
+#logo {
+  max-width: 300px;
+}
