@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    color: black;
     }
   
   .title {
@@ -9,26 +8,10 @@
     font-size: 25px;
   }
   
-  #randomName {
-    font-size: 15px;
-    background-color: rgb(136, 0, 255);
-    padding: 4px;
-  }
-  
-  #randomMovie {
-    font-style: italic;
-  }
-  .topInfo{
-    text-align: center;
-  }
-  
-  #date {
-    font-size: 17px;
-  }
-  
   .subtitle {
     font-size: 15px;
     color: rgb(0, 0, 0);
+    text-align: center;
   }
   
   .hero-body {
@@ -89,6 +72,10 @@
     max-width: 300px;
   }
 
-  .tile {
-    color: black;
+  .runTitle {
+    color: white;
+    font-size: 20px;
+    background-color: rgba(136, 0, 255, 0.826);
+    border-radius: 50px;
+    border: solid 5px black;
   }
