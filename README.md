@@ -1,6 +1,4 @@
-img width="468" alt="Movie-Finder" src="https://user-images.githubusercontent.com/113862182/201781155-1e1dd1ad-3d5f-477b-b961-604189de2eed.png
-
-# movie-finder-project
+# Movie Finder Project using third party APIs
 A team effort for a movie finder application using HTML, CSS, JS, and third-party APIs.
 
 # Name
@@ -16,7 +14,7 @@ Jarrett Jennings;
 Lisette Morales
 
 ## Deployment URL
-https://github.com/iamlucho/movie-finder-project
+https://iamlucho.github.io/movie-finder-project/
 
 ## Description
 The project is a movie search application that provides search results based on user parameters such as title, genre, and year. Once results are shown, it allows the user to find streaming services to watch the movie. If the user is not sure of what to search for, the application has an option to show a random movie.
@@ -35,6 +33,9 @@ AS A person looking for something to watch
 I WANT to find a list of all available movies matching my interests
 
 SO THAT I can plan my movie night accordingly
+
+## Screenshot
+![Movie-Finder](https://user-images.githubusercontent.com/113862182/201781155-1e1dd1ad-3d5f-477b-b961-604189de2eed.png)
 
 ## Acceptance Criteria
 GIVEN a simple dashboard with a random movie quote and a search box with different input forms

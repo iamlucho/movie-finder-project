@@ -107,17 +107,17 @@ $("#searchbtn").on("click", function () {
 
 
   if (searchTitle && searchTitle.value) {
-    alert("Title");
+    //alert("Title");
     var url = "search-results.html?name=" + encodeURIComponent($("#movietitle").val());
     window.location.href = url;
   }
   else if(searchGenre && searchGenre.value){
-    alert("Genre");
+    //alert("Genre");
     var url = "search-results.html?genre=" + encodeURIComponent($("#moviegenre").val());
     window.location.href = url;
   }
   else if(searchYear && searchYear.value){
-    alert("Year!");
+    //alert("Year!");
     var url = "search-results.html?year=" + encodeURIComponent($("#year").val());
     window.location.href = url;
   }
