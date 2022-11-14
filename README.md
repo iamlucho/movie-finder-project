@@ -1,3 +1,5 @@
+img width="468" alt="Movie-Finder" src="https://user-images.githubusercontent.com/113862182/201781155-1e1dd1ad-3d5f-477b-b961-604189de2eed.png
+
 # movie-finder-project
 A team effort for a movie finder application using HTML, CSS, JS, and third-party APIs.
 
@@ -18,6 +20,9 @@ https://github.com/iamlucho/movie-finder-project
 
 ## Description
 The project is a movie search application that provides search results based on user parameters such as title, genre, and year. Once results are shown, it allows the user to find streaming services to watch the movie. If the user is not sure of what to search for, the application has an option to show a random movie.
+
+## Technolgies Used
+HTML; CSS (Bulma); JS; APIs; jQuery; Moment.js
 
 ## Acknowledgment
 We would like to thank the professor, TAs, and others who provided their heplful advise and guidance.
