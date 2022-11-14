@@ -1,0 +1,81 @@
+*{
+    box-sizing: border-box;
+    }
+  
+  .title {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 25px;
+  }
+  
+  .subtitle {
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+  }
+  
+  .hero-body {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+  
+  .onePiece {
+    background-image: url("https://reeldealmovie.files.wordpress.com/2021/03/cropped-cropped-popcorn-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .titleContainer {
+    align-content: center;
+    padding: 75px;
+    border: solid rgb(255, 4, 4);
+    margin: 0;
+  }
+  .paper {
+    background-color: rgba(255, 0, 0, 0.756);
+    border-radius: 500px;
+    border: solid 15px black;
+  }
+  .hero.is-link {
+    background-color: black;
+    font-size: 50px;
+  }
+  
+  body {
+    background-color: rgb(136, 0, 255);
+  }
+  
+  .label {
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+  }
+
+  .footer {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    margin: 0px;
+  }
+  
+  #takemebtn {
+  background-color: rgb(136, 0, 255);
+  color: rgb(255, 255, 255);
+  left: 40%;
+  }
+  
+  .footerHere {
+    background-color: black;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+  }
+  
+  #logo {
+    max-width: 300px;
+  }
+
+  .runTitle {
+    color: white;
+    font-size: 20px;
+    background-color: rgba(136, 0, 255, 0.826);
+    border-radius: 50px;
+    border: solid 5px black;
+  }

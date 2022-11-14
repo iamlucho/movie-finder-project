@@ -66,32 +66,19 @@ body {
   padding-top: 10px;
 }
 
-#watchlistbtn {
-  background-color: black;
-}
-
-#priorbtn {
-  background-color: black;
-}
-
-#choosebtn {
-  background-color: black;
-}
-
-#searchbtn {
-  background-color: black;
-}
-
 .footer {
   background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   margin: 0px;
 }
 
-#takemebtn {
-background-color: rgb(136, 0, 255);
+.runTitle {
+background-color: rgba(136, 0, 255, 0.658);
 color: rgb(255, 255, 255);
-left: 40%;
+padding: 10px;
+border-radius: 50px;
+font-size: 20px;
+border: solid 5px black;
 }
 
 .footerHere {
