@@ -18,20 +18,20 @@
 
   </head>
   <body>
-     <!-- Main Hero for website into-->
-     <section class="onePiece">
-        <div class="titleContainer">
-          <div class="hero-body paper">
-            <p class="title is-flex is-justify-content-center">
-              Movie Finder
+      <!-- Main Hero for website into-->
+      <section class="onePiece">
+      <div class="titleContainer">
+        <div class="hero-body paper">
+          <p class="title is-flex is-justify-content-center">
+            Movie Finder
+          </p>
+          <!-- Added current date of day-->
+          <p id="date" class="subtitle is-flex is-justify-content-center">
+          </p>
+            <p class="subtitle is-flex is-justify-content-center">
+              Get your popcorn ready!
             </p>
-            <!-- Added current date of day-->
-            <p id="date" class="subtitle is-flex is-justify-content-center">
-            </p>
-              <p class="subtitle is-flex is-justify-content-center">
-                Get your popcorn ready!
-              </p>
-            </div>
+          </div>
         </div>
     </section>
 
@@ -40,7 +40,7 @@
         <div class="hero-body">
           <div id="randomMovie" class="mb-4"></div>
           <div class="columns is-centered">
-            <!-- <button id="takemebtn" class="button">Take me there</button> -->
+            <button id="takemebtn" class="button">Take me there</button>
           </div>
         </div>
     </section>
@@ -96,7 +96,7 @@
           <div class="control is-flex is-justify-content-right">
             <button id="watchlistbtn" class="button is-primary mb-2 mr-2 js-modal-trigger" data-target="watchlist-modal">Watchlist</button>
             <button id="priorbtn" class="button is-primary mb-2 mr-2 js-modal-trigger" data-target="history-modal">Search History</button>
-            <button id="choosebtn"class="button is-primary mb-2 mr-2">Choose for me</button>
+            <!-- <button id="choosebtn"class="button is-primary mb-2 mr-2">Choose for me</button> -->
             <button id="searchbtn"class="button is-primary mb-2 mr-2">Search</button>
           </div>
         </div>
@@ -110,7 +110,7 @@
               <p class="modal-card-title">Watchlist</p>
               <button class="delete" aria-label="close"></button>
             </header>
-            <section class="modal-card-body">
+            <section id="wl-content" class="modal-card-body">
               <!-- Content ... -->
             </section>
             <footer class="modal-card-foot">
@@ -137,46 +137,11 @@
           </div>
         </div>
 
-        <!--Watchlist Modal Start-->
-        <div id="watchlist-modal" class="modal">
-          <div class="modal-background"></div>
-        
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Watchlist</p>
-              <button class="delete" aria-label="close"></button>
-            </header>
-            <section class="modal-card-body">
-              <!-- Content ... -->
-            </section>
-            <footer class="modal-card-foot">
-        
-          <button class="modal-close is-large" aria-label="close"></button>
-          </div>
-        </div>
-  
-        <!--History Modal Start-->
-        <div id="history-modal" class="modal">
-          <div class="modal-background"></div>
-        
-          <div class="modal-card">
-            <header class="modal-card-head">
-              <p class="modal-card-title">Previous Searches</p>
-              <button class="delete" aria-label="close"></button>
-            </header>
-            <section id="hist-content" class="modal-card-body">
-              <!-- Content ... -->
-            </section>
-            <footer class="modal-card-foot">
-        
-          <button class="modal-close is-large" aria-label="close"></button>
-          </div>
-        </div>
-       <section>
+      <section>
         <div class="flex-column" id="movieUser"></div>
       </section>
-     
-     <footer class="footerHere">
+    
+    <footer class="footerHere">
       <div class="content has-text-centered">
         <p> Site developed by Luciano Aguirre, Lisette Morales, Christopher Cristobal and Jarrett Jennings.
           Style sheet by Bulma by <a href="https://jgthms.com">Jeremy Thomas</a>.        </p>

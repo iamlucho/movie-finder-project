@@ -12,21 +12,21 @@ fetch(randomURL)
     $( "#randomMovie" ).append("<p class='subtitle is-flex is-justify-content-center'>"+ data.data[randomNumber].overview + "</p>");
   });
 
-  //Random Movie Take Me There Button
-  $("#takemebtn").on("click", function () {
-    var randomTitle = localStorage.getItem("randomMovie");
-    const APIkey = "0bd962e73cf85056fcdda0597b83fb2b"
-    console.log(randomTitle);
-    var randomSearchURL = "https://api.themoviedb.org/3/search/movie?api_key=" + APIkey + "&language=en-US&query=" + randomTitle + "&page=1&include_adult=false"
-    
-    //Added local storage for storing data from the API after user searches title
-      fetch(randomSearchURL)
-        .then((response) => response.json())
-        .then((data) => {
-          console.log(data.results[0])
-          localStorage.setItem("movie", JSON.stringify(data.results[0]))      
-          var url = "search-results.html?name=" + encodeURIComponent(randomTitle);
-          window.location.href = url;
+//Random Movie Take Me There Button
+$("#takemebtn").on("click", function () {
+  var randomTitle = localStorage.getItem("randomMovie");
+  const APIkey = "0bd962e73cf85056fcdda0597b83fb2b"
+  console.log(randomTitle);
+  var randomSearchURL = "https://api.themoviedb.org/3/search/movie?api_key=" + APIkey + "&language=en-US&query=" + randomTitle + "&page=1&include_adult=false"
+
+//Added local storage for storing data from the API after user searches title
+  fetch(randomSearchURL)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data.results[0])
+      localStorage.setItem("movie", JSON.stringify(data.results[0]))      
+      var url = "search-results.html?name=" + encodeURIComponent(randomTitle);
+      window.location.href = url;
   })
 })
 
@@ -56,9 +56,7 @@ $("#WLbtn").on("click", function() {
   }
 });
 
-
 $("#removelistbtn").on("click", function (){
-
   $('#wl-content li:first-child').remove();
   $('#removelistbtn').addClass("is-hidden");
   $('#WLbtn').removeClass("is-hidden");
@@ -182,3 +180,4 @@ $('#year').on('change', function(){
     $('#moviegenre').prop( "disabled", true );
   }
 });
+
